@@ -13,6 +13,8 @@ export function errorHandler(
 			success: false,
 			message: error.message,
 		});
+		logger.error({ err: error }, "Unhandled error");
+		return;
 	}
 	logger.error({ err: error }, "Unhandled error");
 

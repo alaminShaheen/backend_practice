@@ -9,6 +9,8 @@ const EnvSchema = z.object({
 	DATABASE_URL: z.url({
 		error: "DATABASE_URL must be a valid connection URL",
 	}),
+	JWT_SECRET: z.string({error: "JWT_SECRET is required."}),
+	JWT_ACCESS_EXPIRATION_TIME: z.string().default("15m")
 });
 
 const parsed = EnvSchema.safeParse(process.env);

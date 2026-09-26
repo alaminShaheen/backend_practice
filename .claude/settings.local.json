@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker exec nodejs-capstone-db *)",
+      "Bash(node -e \"const {Pool} = require\\('pg'\\); const p = new Pool\\({connectionString: 'postgresql://postgres:postgres@localhost:5433/capstone-db'}\\); p.query\\('SELECT current_database\\(\\)'\\).then\\(r => {console.log\\('OK:', r.rows\\); p.end\\(\\);}\\).catch\\(e => {console.error\\('ERR:', e.message, e.code\\); p.end\\(\\);}\\);\")"
+    ]
+  }
+}
