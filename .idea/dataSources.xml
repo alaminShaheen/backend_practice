@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="practice@localhost" uuid="41b94745-7b01-4cf0-858f-e374cb23b7af">
+    <data-source source="LOCAL" name="capstone-db@localhost" uuid="4f949209-71eb-48b8-be19-88de114c26a7">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/practice</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5433/capstone-db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

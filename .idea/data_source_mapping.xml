@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/database-practice/part-2/01-sql-concepts-base-file.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-2/02-insert-single-row.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-2/12-update-single-row.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-2/13-update-multiple-row.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-2/14-delete-rows.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-2/15-returning-after-insert.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/01-reset-and-seed-relationships.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/02-foreign-keys.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/03-one-to-many-relationship.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/04-inner-join.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/05-left-join.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/06-many-to-many-relationship.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/07-table-aliases.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/08-aggregate-functions.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/09-group-by.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/10-count-distinct.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/11-subqueries.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
-    <file url="file://$PROJECT_DIR$/database-practice/part-3/12-indexes.sql" value="41b94745-7b01-4cf0-858f-e374cb23b7af" />
+    <file url="file://$PROJECT_DIR$/capstone/migrations/001_enable_pgcrypto.sql" value="4f949209-71eb-48b8-be19-88de114c26a7" />
+    <file url="file://$PROJECT_DIR$/capstone/migrations/002_create_users_table.sql" value="4f949209-71eb-48b8-be19-88de114c26a7" />
   </component>
 </project>
