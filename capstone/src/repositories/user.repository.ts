@@ -1,7 +1,7 @@
 import {
 	UserEntity,
 	UserEntityWithPassword,
-} from "../types/databaseEntities/userEntity";
+} from "../types/databaseEntities/UserEntity";
 import { pool } from "../db/database";
 
 export async function findUserByEmail(
