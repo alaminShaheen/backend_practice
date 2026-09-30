@@ -6,6 +6,7 @@ import {
 } from "express";
 import { UserAuthRequest } from "../types/dtos/UserAuthRequest";
 import { loginUser, registerUser } from "../services/auth.service";
+import { authenticate } from "../middlewares/auth.middleware";
 
 export const authRouter = Router();
 
@@ -48,3 +49,12 @@ authRouter.post(
 		}
 	},
 );
+
+authRouter.get("/me", authenticate, (req: Request, res: Response) => {
+	res.status(200).json({
+		success: true,
+		data: {
+			user: req.user,
+		},
+	});
+});

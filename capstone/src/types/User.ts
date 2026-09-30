@@ -1,6 +1,8 @@
+import { UserRole } from "./enums/UserRole";
+
 export type User = {
 	id: string;
 	email: string;
-	role: string;
+	role: UserRole;
 	createdAt: Date;
 }
