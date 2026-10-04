@@ -7,6 +7,7 @@ import {
 	updateUserTaskTitle,
 } from "../repositories/user.task.repository";
 import { UpdateTaskRequest } from "../types/dtos/UpdateTaskRequest";
+import { toTask, toTasks } from "../mappers/task.mapper";
 
 export async function createUserTask(userId: string, title: unknown) {
 	if (typeof title !== "string" || !title.trim()) {
@@ -18,22 +19,23 @@ export async function createUserTask(userId: string, title: unknown) {
 	if (trimmedTitle.length > 150) {
 		throw new AppError(400, "Title must be less than 150 chars or less.");
 	}
-
-	return createTask(userId, title);
+	const taskEntity = await createTask(userId, title);
+	return toTask(taskEntity);
 }
 
 export async function getUserTasks(userId: string) {
-	return getTasksByUserId(userId);
+	const taskEntities = await getTasksByUserId(userId);
+	return toTasks(taskEntities);
 }
 
 export async function getUserTask(userId: string, taskId: string) {
-	const task = await getTaskByUserId(userId, taskId);
+	const taskEntity = await getTaskByUserId(userId, taskId);
 
-	if (!task) {
+	if (!taskEntity) {
 		throw new AppError(404, "Task not found.");
 	}
 
-	return task;
+	return toTask(taskEntity);
 }
 
 export async function updateUserTask(
@@ -41,13 +43,13 @@ export async function updateUserTask(
 	taskId: string,
 	body: UpdateTaskRequest,
 ) {
-	const updatedTask = updateUserTaskTitle(userId, taskId, body);
+	const updatedTaskEntity = await updateUserTaskTitle(userId, taskId, body);
 
-	if (!updatedTask) {
+	if (!updatedTaskEntity) {
 		throw new AppError(404, "Task not found.");
 	}
 
-	return updatedTask;
+	return toTask(updatedTaskEntity);
 }
 
 export async function deleteTask(userId: string, taskId: string) {
